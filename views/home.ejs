@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Jost:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Contact phone with nodemailer</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="contact animate__animated animate__bounceInLeft">
+        <div class="section-header">
+          <h1>Contact Form with Nodemailer</h1>
+        </div>
+        <div class="send-message">
+          <!-- insert error message -->
+        </div>
+        <div class="form">
+          <form action="send" method="POST">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Name</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Fullname"
+                  name="fullname"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2"
+                  >mail@example.com</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Email"
+                  name="email"
+                  aria-describedby="basic-addon2"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Subject</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Enter Subject"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Message</span>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  name="message"
+                  placeholder="Type Message"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <button type="submit" class="btn btn-default btn-lg">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
