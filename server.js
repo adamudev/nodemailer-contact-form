@@ -37,7 +37,7 @@ app.post("/send", (req, res) => {
       secure: false, // true for 465, false for other ports
       auth: {
         user: "<your-email@your-domain.tld>", // your email
-        pass: "<password>!!", // your password
+        pass: "<password>", // your password
       },
       // Add this line if you are running this from a localhost
       tls: {
