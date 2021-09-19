@@ -47,9 +47,9 @@ app.post("/send", (req, res) => {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Nodemailer Contact" <hi@adamu.me>', // sender address
-      to: `adamudev@gmail.com, ${req.body.email}`, // list of receivers
-      subject: "Hello ✔", // Subject line
+      from: '"Nodemailer Contact" <sender@email.me>', // sender address
+      to: `recievers@email.com, ${req.body.email}`, // list of receivers
+      subject: "Hello woold", // Subject line
       text: "Hello world?", // plain text body
       html: output, // html body
     });
